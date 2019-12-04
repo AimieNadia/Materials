@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>E-Form</title>
+    <style >
+      input:invalid {
+        border: 2px dashed red;
+      }
+      input:valid {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form>
+
+      <fieldset>
+        <label>Choose a Date </label>
+        <input type="date" name="date" required><br/>
+        <br/>
+        <label>choose Number between 1 and 50: </label>
+        <input type="number"> <br/>
+        <br/>
+<fieldset>
+        <legend>What is your favourite subject? </legend>
+          <input type="radio" name="subject" value="Maths">Maths <br>
+          <input type="radio" name="subject" value="Science">Science <br>
+          <input type="radio" name="subject" value="Biology">Biology
+          </fieldset> <br/><br/>
+
+          <select id="simple" name="simple">
+            <option selected>Study Level </option>
+            <br/><br/>
+          </select><br/><br/>
+          <button type="submit" name="Submit">Submit</button>
+          <button type="reset" name="Reset">Reset</button>
+      </fieldset>
+
+    </form>
+  </body>
+</html>
